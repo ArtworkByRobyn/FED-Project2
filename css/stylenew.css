@@ -9,6 +9,11 @@ body {
     background-color: #86b4cb;
 }
 
+nav h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+}
+
 html, body {
     height: 100%;
 }
@@ -95,7 +100,7 @@ p {
 
 .intro {
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     margin: 0 auto;
 }
 
@@ -106,6 +111,15 @@ p {
     padding-top: 20px;
 }
 
+.skills {
+    width: 100%;
+    padding: 40px 20px;
+    margin: 0 auto;
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+
 .portfolio p {
     padding-top: 10px;
 }
@@ -113,7 +127,7 @@ p {
 .img-profile {
     display: block;
     width: 100%;
-    margin: 20px auto 0px;
+    margin: 0 auto 0px;
 }
 
 .portfolio-container {
@@ -170,6 +184,10 @@ p {
     margin-top: 10px;
 }
 
+footer h3 {
+    font-family: 'Pacifico', cursive;
+}
+
 @media screen and (min-width: 768px) {
     
     nav {
@@ -181,6 +199,11 @@ p {
     
     .top-nav {
         margin-top: 0;
+    }
+
+    .top-nav a:hover {
+        color: white;
+        font-weight: bold;
     }
 
     .top-nav li {
@@ -201,6 +224,7 @@ p {
     .intro {
         display: flex;
         flex-direction: row-reverse;
+        padding-bottom: 20px;
     }
 
     .intro p {
@@ -212,7 +236,7 @@ p {
     }
 
     .img-profile {
-        width: 35%;
+        width: 30%;
         margin: 40px 20px 40px 20px;
         border: 2px solid #06364f;
     }
@@ -220,6 +244,7 @@ p {
     .portfolio {
         display: flex;
         flex-wrap: wrap;
+        padding-top: 0;
     }
 
     .port {
@@ -235,6 +260,10 @@ p {
         margin-left: 20px;
     }
 
+    .footer-nav a:hover {
+        color: white;
+        font-weight: bold;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -255,6 +284,11 @@ p {
         margin: 0;
     }
 
+    .top-nav a:hover {
+        color: white;
+        font-weight: bold;
+    }
+
     .intro p {
         text-align: left;
         font-size: 16px;
@@ -264,7 +298,7 @@ p {
     }
 
     .img-profile {
-        width: 35%;
+        width: 25%;
         margin: 40px;
         border: 2px solid #06364f;
     }
@@ -280,5 +314,10 @@ p {
 
     footer {
         padding: 60px;
+    }
+
+    .footer-nav a:hover {
+        color: white;
+        font-weight: bold;
     }
 }

@@ -3,30 +3,37 @@
     <head>
         <meta charset="utf-8">
         <title>responsive-website</title>
-        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
         <link rel="stylesheet" href="css/stylenew.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
     </head>
     
     <body>
 
     <nav>
-        <h1><a href="#">Student Name</a></h1>
+        <h1><a href="#">Robyn Patterson</a></h1>
         <ul class="top-nav">
           <li><a href="#">home</a></li>
           <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#skills">skills</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
 
     <main>
         <div class="intro">
-          <img src="images/responsive-layout-profile.png" alt="Profile Image" class="img-profile">
+          <img src="images/robyn-profile.jpg" alt="Profile Image" class="img-profile">
           <p>Hi! I’m a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
         </div>
 
-        <div class="portfolio-container">
+        <div class="skills" id="skills">
+          <p class="port-title">My Skills</p>
+          <p>This section will show the skills I offer.</p>
+        </div>
+
+        <div class="portfolio-container" id="portfolio">
           <h3 class="main-title">Portfolio</h3>
 
           <div class="portfolio">
@@ -70,7 +77,7 @@
         </div>
       </div>
 
-        <div class="contact">
+        <div class="contact" id="contact">
           <h3>contact</h3>
           <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
           <br>
@@ -79,12 +86,13 @@
         </div>
 
         <footer>
-          <h3>Student Name</h3>
+          <h3>Robyn Patterson</h3>
           <ul class="footer-nav">
             <li class="top"><a href="#">back to top</a></li>
             <li class="full"><a href="#">home</a></li>
-            <li class="full"><a href="#">portfolio</a></li>
-            <li class="full"><a href="#">contact</a></li>
+            <li class="full"><a href="#portfolio">portfolio</a></li>
+            <li class="full"><a href="#skills">skills</a></li>
+            <li class="full"><a href="#contact">contact</a></li>
           </ul>
         </footer>
 
