@@ -27,10 +27,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
-    margin-top: auto;
+    margin: auto;
     padding: 0 20px 20px;
     height: 100px;
     color: #06364f;
+    border-top: 1px solid white;
+    width: 90%;
 }
 
 .full {
@@ -76,6 +78,7 @@ p {
     margin-bottom: 0;
 }
 
+
 .top-nav {
     margin-top: 30px;
 }
@@ -113,12 +116,16 @@ p {
     margin: 20px auto 0px;
 }
 
+.portfolio-container {
+    background-color: white;
+    padding-bottom: 40px;
+}
+
 .portfolio {
     max-width: 1100px;
     padding: 10px;
     margin: 0 auto;
     font-weight: 300;
-    background-color: white;
 }
 
 .port {
@@ -151,7 +158,6 @@ p {
 .contact {
     padding: 20px 20px 50px 20px;
     margin: 0 auto;
-    border-bottom: 1px solid white;
     color:#06364f;
     text-align: center;
 }
@@ -160,8 +166,18 @@ p {
     text-transform: uppercase;
 }
 
+.email {
+    margin-top: 10px;
+}
 
 @media screen and (min-width: 768px) {
+    
+    nav {
+        margin: auto;
+        padding: 40px 20px 20px;
+        border-bottom: 1px solid white;
+        width: 90%;
+    }
     
     .top-nav {
         margin-top: 0;
@@ -191,13 +207,13 @@ p {
         text-align: left;
         font-size: 16px;
         color: white;
-        padding-top: 0px;
-        padding-right: 15px;
+        margin: 40px 20px 40px 20px;
+        padding: 0;
     }
 
     .img-profile {
         width: 35%;
-        margin: 0 auto 0 20px;
+        margin: 40px 20px 40px 20px;
         border: 2px solid #06364f;
     }
 
@@ -223,6 +239,10 @@ p {
 
 @media screen and (min-width: 1024px) {
 
+    nav {
+        padding-top: 30px;
+    }
+
     h1 {
         float: left;
         text-align: left;
@@ -235,7 +255,30 @@ p {
         margin: 0;
     }
 
+    .intro p {
+        text-align: left;
+        font-size: 16px;
+        color: white;
+        margin: 40px;
+        padding: 0;
+    }
+
+    .img-profile {
+        width: 35%;
+        margin: 40px;
+        border: 2px solid #06364f;
+    }
+
+    .portfolio-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .port {
         flex-basis: calc(33.33% - 30px);
+    }
+
+    footer {
+        padding: 60px;
     }
 }
